@@ -31,10 +31,6 @@ export default function LeftBar() {
             <span className="listName">Group</span>
           </li>
           <li className="sidebarListItem">
-            <GroupsIcon className="listIcon" />
-            <span className="listName">Group</span>
-          </li>
-          <li className="sidebarListItem">
             <DateRangeIcon className="listIcon" />
             <span className="listName">Events</span>
           </li>

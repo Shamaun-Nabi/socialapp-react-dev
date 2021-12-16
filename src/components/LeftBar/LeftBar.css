@@ -39,19 +39,19 @@
   margin: 0px;
   list-style: none;
 }
-.friendList{
-    padding:0;
-    list-style: none;
+.friendList {
+  padding: 0;
+  list-style: none;
 }
-.groupFriendList:hover{
-    background-color:#8a8a8a;
+.groupFriendList:hover {
+  background-color: #8a8a8a;
 }
-.friendListItem{
-    display: flex;
-    align-items: center;
-    margin-top:10px;
-    margin-bottom:15px;
-    cursor: pointer;
+.friendListItem {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
 }
 .friendImage {
   width: 50px;
@@ -60,26 +60,31 @@
   border-radius: 50%;
   margin-right: 10px;
 }
-.showBtn{
-    width:100px;
-    border-radius: 5px;
-    height:30px;
-    border: none;
-    background: #c9cac9;
-    font-weight: bold;
-    cursor: pointer;
-}
-.hrDs{
-    margin-top:10px;
+.showBtn {
+  width: 100px;
+  border-radius: 5px;
+  height: 30px;
+  border: none;
+  background: #c9cac9;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-::-webkit-scrollbar{
-    width:5px;
-    border-radius:10px;
+.showBtn:hover {
+  background-color: #2a2b2b;
+  color: white;
 }
-::-webkit-scrollbar-track{
-background-color: #d7dada;
+.hrDs {
+  margin-top: 10px;
 }
-::-webkit-scrollbar-thumb{
-background-color: #8a8a8a;
+
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #d7dada;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #8a8a8a;
 }
