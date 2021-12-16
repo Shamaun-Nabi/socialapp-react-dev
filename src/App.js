@@ -1,9 +1,10 @@
+import Home from "./allpages/Home/Home";
 
 function App() {
   return (
-    <div >
-
-    </div>
+ <>
+ <Home/>
+ </>
   );
 }
 
