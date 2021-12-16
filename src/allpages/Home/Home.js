@@ -1,10 +1,9 @@
 import React from "react";
+import Topbar from "../../components/TopBar/Topbar";
 export default function Home() {
   return (
     <div>
-      <h3>
-        Home Page
-      </h3>
+      <Topbar />
     </div>
   );
 }

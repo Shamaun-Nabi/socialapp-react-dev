@@ -1,0 +1,82 @@
+.topbarContainer {
+  /* background-color: rgb(38, 36, 39); */
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  /* border-radius: 10px; */
+  /* background: #ecf0f3; */
+  background: #2a2b2b;
+  /* box-shadow: 1px 1px 10px #cbced1, -0px -0px 0px #ffffff; */
+}
+.topbarLeft {
+  flex: 3;
+}
+.topbarCenter {
+  flex: 5;
+}
+.searchBar {
+    width: 100%;
+    background-color: aliceblue;
+    height: 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .searchInput{
+      width: 80%;
+      margin-left:10px;
+      height:auto;
+      border: none;
+      text-align: center;
+      background-color: aliceblue;
+  } 
+  
+  .searchBarIcon{
+      margin-left: 10px;
+  }
+  
+  .searchInput:focus{
+      outline:none;
+  }
+.topbarRight {
+  flex: 4;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+}
+.topbarLink{
+    padding: 10px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+.topbarIcon{
+    color:white;
+    cursor: pointer;
+}
+.topbarIconBadge{
+    color:rgb(14, 226, 223);
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00e6e2, 0 0 40px #00e6e2, 0 0 50px #00e6e2, 0 0 60px #00e6e2, 0 0 70px #00e6e2;
+}
+
+.logo {
+  font-size: 24px;
+  /* color: rgb(36, 36, 36); */
+  color: rgb(233, 233, 233);
+  font-weight: 700;
+  margin-left: 28px;
+  cursor: pointer;
+}
+.topbarImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  object-fit: cover;
+  border:1px solid rgb(14, 226, 223);
+  
+}
+
+
