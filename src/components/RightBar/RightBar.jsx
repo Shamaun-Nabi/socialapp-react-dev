@@ -1,5 +1,6 @@
 import React from "react";
 import "./RightBar.css";
+import { Users } from "../../dummyData";
 
 export default function RightBar() {
   return (
@@ -18,42 +19,24 @@ export default function RightBar() {
         />
         <h4 className="onlineFriendTitle">Online Friends</h4>
         <ul className="friendlist">
-          <li className="friendName">
-            <div className="friendImageContainer">
-             <div className="imageContainer">
-             <img className="friendImageRightbar" src="assets/person/6.jpeg" alt="pic" />
-              <span className="rightBarFriendName">Jhon doe</span>
-              <span className="onlineIcon"></span>
-             </div>
-             <div className="activestatus">
-               <span>Active</span>
-             </div>
-            </div>
-          </li>
-          <li className="friendName">
-            <div className="friendImageContainer">
-             <div className="imageContainer">
-             <img className="friendImageRightbar" src="assets/person/6.jpeg" alt="pic" />
-              <span className="rightBarFriendName">Jhon doe</span>
-              <span className="onlineIcon"></span>
-             </div>
-             <div className="activestatus">
-               <span>26 mins Ago </span>
-             </div>
-            </div>
-          </li>
-          <li className="friendName">
-            <div className="friendImageContainer">
-             <div className="imageContainer">
-             <img className="friendImageRightbar" src="assets/person/6.jpeg" alt="pic" />
-              <span className="rightBarFriendName">Jhon doe</span>
-              <span className="onlineIcon"></span>
-             </div>
-             <div className="activestatus">
-               <span>Active an Hour Ago</span>
-             </div>
-            </div>
-          </li>
+          {Users.map((u) => (
+            <li className="friendName">
+              <div className="friendImageContainer">
+                <div className="imageContainer">
+                  <img
+                    className="friendImageRightbar"
+                    src={u.profilePicture}
+                    alt="pic"
+                  />
+                  <span className="rightBarFriendName">{u.username}</span>
+                  <span className={u.icon}></span>
+                </div>
+                <div className="activestatus">
+                  <span>{u.status}</span>
+                </div>
+              </div>
+            </li>
+          ))}
         </ul>
       </div>
     </div>

@@ -68,6 +68,17 @@
   top: 3px;
   border: 1px solid white;
 }
+.offlineIcon {
+  width: 10px;
+  height: 10px;
+  background: rgb(140, 140, 140);
+  border-radius: 50%;
+  position: absolute;
+  margin-left: 20px;
+  /* margin-top: 100px; */
+  top: 3px;
+  border: 1px solid white;
+}
 .activestatus {
   color: rgb(165, 162, 162);
 }
