@@ -30,6 +30,30 @@ export default function RightBar() {
              </div>
             </div>
           </li>
+          <li className="friendName">
+            <div className="friendImageContainer">
+             <div className="imageContainer">
+             <img className="friendImageRightbar" src="assets/person/6.jpeg" alt="pic" />
+              <span className="rightBarFriendName">Jhon doe</span>
+              <span className="onlineIcon"></span>
+             </div>
+             <div className="activestatus">
+               <span>26 mins Ago </span>
+             </div>
+            </div>
+          </li>
+          <li className="friendName">
+            <div className="friendImageContainer">
+             <div className="imageContainer">
+             <img className="friendImageRightbar" src="assets/person/6.jpeg" alt="pic" />
+              <span className="rightBarFriendName">Jhon doe</span>
+              <span className="onlineIcon"></span>
+             </div>
+             <div className="activestatus">
+               <span>Active an Hour Ago</span>
+             </div>
+            </div>
+          </li>
         </ul>
       </div>
     </div>

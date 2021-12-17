@@ -1,8 +1,13 @@
 import React from "react";
 import "./Post.css";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+import { Users } from "../../dummyData";
 
-export default function Post() {
+export default function Post(props) {
+  const { date, desc, photo, like, comment } = props.onePost;
+  // const user = Users.filter((u) => u.id === 1);
+  // console.log(user);
+  // console.log(props);
   return (
     <div className="singlePost">
       <div className="singlePostWrapper">
@@ -10,30 +15,32 @@ export default function Post() {
           <div className="postLeftTop">
             <img
               className="profileWithPost"
-              src="/assets/person/2.jpeg"
+              src={
+                Users.filter((u) => u.id === props.onePost.userId)[0].profilePicture
+              }
               alt="Your profile"
             />
-            <span className="profileNameText">Shamaun Nabi</span>
-            <span className="displayTime">58 Mins Ago</span>
+            <span className="profileNameText">
+              {Users.filter((u) => u.id === props.onePost.userId)[0].username}
+            </span>
+            <span className="displayTime">{date}</span>
           </div>
           <div className="postRightTop">
             <MoreHorizIcon className="moreIcon" />
           </div>
         </div>
         <div className="singlePostCenter">
-          <span className="sharePostText"> Hey !! This Is My First Post</span>
-          <img className="postImage" src="/assets/post/8.jpeg" alt="" />
+          <span className="sharePostText">{desc}</span>
+          <img className="postImage" src={photo} alt="" />
         </div>
         <div className="singlePostBottom">
           <div className="bottomLeft">
             <img className="likeIcon" src="assets/like.png" alt="" srcset="" />
-            <img  className="likeIcon"src="assets/heart.png" alt="" srcset="" />
-            <span className="likeText">21 people Like This</span>
+            <img className="likeIcon" src="assets/heart.png" alt="" srcset="" />
+            <span className="likeText">{like} People Like This</span>
           </div>
           <div className="bottomRight">
-            <span className="commentText">
-              9 comments
-            </span>
+            <span className="commentText">{comment} comments</span>
           </div>
         </div>
       </div>

@@ -1,13 +1,14 @@
 .leftBar {
   flex: 3;
   /* background-color: rgb(228, 252, 13); */
-  height: calc(100vh - 50px);
+  /* height: calc(100vh - 50px); */
   /* border-radius: 0px; */
   background: #eceeed;
-  box-shadow: 7px 7px 14px #c9cac9, -7px -7px 14px #ebeeed;
+  box-shadow: 7px 7px 14px #c9cac9, -7px 0px 1px #ebeeed;
   overflow-y: scroll;
-  /* position: relative; */
-  /* height:100vmax; */
+  position: sticky;
+  top: 0px;
+  height:100vh;
 }
 .sidebarListItem {
   display: flex;
