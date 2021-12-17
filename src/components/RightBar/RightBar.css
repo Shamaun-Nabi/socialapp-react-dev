@@ -1,6 +1,7 @@
 .rightBar {
   flex: 4;
   position: sticky;
+  /* overflow-y: scroll; */
   overflow-y: scroll;
   top: 0px;
   height:100vh;

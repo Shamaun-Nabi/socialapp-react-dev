@@ -74,38 +74,6 @@ export default function LeftBar() {
             />
             <span className="friendNameText">Maha Chowdhury</span>
           </li>
-          <li className="friendListItem">
-            <img
-              src="/assets/person/4.jpeg"
-              alt="friendImage"
-              className="friendImage"
-            />
-            <span className="friendNameText">Maha Chowdhury</span>
-          </li>
-          <li className="friendListItem">
-            <img
-              src="/assets/person/4.jpeg"
-              alt="friendImage"
-              className="friendImage"
-            />
-            <span className="friendNameText">Maha Chowdhury</span>
-          </li>
-          <li className="friendListItem">
-            <img
-              src="/assets/person/4.jpeg"
-              alt="friendImage"
-              className="friendImage"
-            />
-            <span className="friendNameText">Maha Chowdhury</span>
-          </li>
-          <li className="friendListItem">
-            <img
-              src="/assets/person/4.jpeg"
-              alt="friendImage"
-              className="friendImage"
-            />
-            <span className="friendNameText">Maha Chowdhury</span>
-          </li>
         </ul>
       </div>
     </div>
