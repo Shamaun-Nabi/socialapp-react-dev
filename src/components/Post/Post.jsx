@@ -1,13 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Post.css";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import { Users } from "../../dummyData";
 
 export default function Post(props) {
+  const [manLike, setManLike] = useState(props.onePost.like);
+  const [isManLike, setIsManLike] = useState(false);
   const { date, desc, photo, like, comment } = props.onePost;
+
   // const user = Users.filter((u) => u.id === 1);
   // console.log(user);
   // console.log(props);
+  const likeHandler = () => {
+    console.log("like");
+    setManLike(isManLike ? manLike - 1 : manLike + 1);
+    setIsManLike(!isManLike);
+    console.log(isManLike);
+  };
   return (
     <div className="singlePost">
       <div className="singlePostWrapper">
@@ -16,7 +25,8 @@ export default function Post(props) {
             <img
               className="profileWithPost"
               src={
-                Users.filter((u) => u.id === props.onePost.userId)[0].profilePicture
+                Users.filter((u) => u.id === props.onePost.userId)[0]
+                  .profilePicture
               }
               alt="Your profile"
             />
@@ -35,9 +45,19 @@ export default function Post(props) {
         </div>
         <div className="singlePostBottom">
           <div className="bottomLeft">
-            <img className="likeIcon" src="assets/like.png" alt="" srcset="" />
-            <img className="likeIcon" src="assets/heart.png" alt="" srcset="" />
-            <span className="likeText">{like} People Like This</span>
+            <img
+              className="likeIcon"
+              src="assets/like.png"
+              onClick={likeHandler}
+              alt=""
+            />
+            <img
+              className="likeIcon"
+              src="assets/heart.png"
+              onclick={likeHandler}
+              alt=""
+            />
+            <span className="likeText">{manLike} People Like This</span>
           </div>
           <div className="bottomRight">
             <span className="commentText">{comment} comments</span>
